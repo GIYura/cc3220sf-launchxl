@@ -3,6 +3,7 @@
 
 #include "led.h"
 #include "board.h"
+#include "delay.h"
 
 int main (void)
 {
@@ -21,7 +22,7 @@ int main (void)
         LedToggle(ledYellow);
         LedToggle(ledRed);
 
-        for(int i = 0; i < 1000000; i++);
+        DelayMs(1000);
     }
 
     return 0;
