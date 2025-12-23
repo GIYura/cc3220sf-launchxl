@@ -9,7 +9,7 @@ CPU = cortex-m4
 MCU = CC3220SF
 
 ##############################################
-# SDK path
+# TI SDK path
 ##############################################
 TI_SDK = /opt/ti/simplelink_cc32xx_sdk_7_10_00_13
 
@@ -22,11 +22,7 @@ LINKER_SCRIPT = $(SUBMODULES)/platforms/boot/cc32xx/cc32xx.ld
 # DEFINES
 ##############################################
 DEFINES += -Dgcc -D$(MCU)
-
-##############################################
-# APPLICATION
-##############################################
-APPLICATION = led
+DEFINES += -DPLATFORM_$(MCU)
 
 ##############################################
 # Include directories
