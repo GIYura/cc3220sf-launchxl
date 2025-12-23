@@ -15,6 +15,11 @@ SRCDIR = src
 BSP = bsp
 
 ##############################################
+# APPLICATION
+##############################################
+APPLICATION = led
+
+##############################################
 # Target platform
 ##############################################
 PLATFORM ?= 
@@ -89,6 +94,8 @@ DIRS = \
     $(SRCDIR) \
     $(PLATFORM_BOOT) \
     $(SUBMODULES)/core/assert \
+    $(SUBMODULES)/core/cmsis \
+    $(SUBMODULES)/delay \
     $(SUBMODULES)/lib/drivers/led \
 
 ##############################################
