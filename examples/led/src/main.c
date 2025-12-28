@@ -22,7 +22,7 @@ int main (void)
         LedToggle(ledYellow);
         LedToggle(ledRed);
 
-        DelayMs(1000);
+        DelayMs(100);
     }
 
     return 0;
