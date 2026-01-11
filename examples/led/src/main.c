@@ -14,6 +14,26 @@ int main (void)
     Led_t* ledYellow = Board_GetLed(BOARD_LED_YELLOW);
     Led_t* ledRed = Board_GetLed(BOARD_LED_RED);
 
+/* NOTE: this is done for test only */
+#if 1
+    LedOn(ledGreenExt);
+    LedOn(ledGreen);
+    LedOn(ledYellow);
+    LedOn(ledRed);
+
+    LedOff(ledGreenExt);
+    LedOff(ledGreen);
+    LedOff(ledYellow);
+    LedOff(ledRed);
+
+    LedDeinit(ledGreenExt);
+    LedDeinit(ledGreen);
+    LedDeinit(ledYellow);
+    LedDeinit(ledRed);
+
+    Board_Init();
+#endif
+
     while (1)
     {
 
@@ -22,7 +42,7 @@ int main (void)
         LedToggle(ledYellow);
         LedToggle(ledRed);
 
-        DelayMs(100);
+        DelayMs(50);
     }
 
     return 0;
