@@ -27,6 +27,16 @@ Board: CC3220FS-LAUNCHXL
 
 TI MCU SDK: [here](https://www.ti.com/tool/SIMPLELINK-CC32XX-SDK#downloads)
 
+**NOTE:** SOP (J13)
+
+| Position  | State   | Notes    |
+|-----------|--------------------|
+| 0         | Close   |          |
+| 1         | Open    |          |
+| 2         | Open    |          |
+
+Mode: Functional mode and 2-wire JTAG
+
 ### Build the project
 
 1. Clone the repository:
