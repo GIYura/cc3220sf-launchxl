@@ -27,15 +27,15 @@ Board: CC3220FS-LAUNCHXL
 
 TI MCU SDK: [here](https://www.ti.com/tool/SIMPLELINK-CC32XX-SDK#downloads)
 
-**NOTE:** SOP (J13)
+**NOTE:** SOP (J13) 
 
-| Position  | State   | Notes    |
-|-----------|--------------------|
-| 0         | Close   |          |
-| 1         | Open    |          |
-| 2         | Open    |          |
+| Position  | State    |       Notes      |
+|-----------|----------|------------------|
+| 0         | Close    |                  |
+| 1         | Open     |                  |
+| 2         | Open     |                  |
 
-Mode: Functional mode and 2-wire JTAG
+**Mode:** Functional mode and 2-wire JTAG
 
 ### Build the project
 
@@ -71,27 +71,27 @@ git submodule update --init --recursive
 
 1. Run Eclipse
 
-2. Create new empty C project
+2. Create new empty **C project**
 
 3. Import source files
 
 4. Project->Propeties->C/C++ Build edit:
 - Build command: make
-- Build directory: specify path the makefile
+- Build directory: specify path to makefile
 
 5. Run->Debug Configuration:
 - Project: specify a name
-- C/C++ Application: specify path to .elf
+- C/C++ Application: specify path to **.elf**
 
 6. Debugger:
 - GDB command: specify path to gdb client
 - Select Use remote target
 - Debug server: Generic TCP/IP
-- Protocol: remote
+- Protocol: extended-remote
 - Connection: localhost:3333
 
 7. Startup
-- Initialization commands: monitor reset halt
+- Initialization commands: **monitor reset halt**
 - Set breakpoint at: main
 - Select Resume
 
