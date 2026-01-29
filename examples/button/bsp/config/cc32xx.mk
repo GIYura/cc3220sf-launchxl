@@ -22,6 +22,7 @@ LINKER_SCRIPT = $(SUBMODULES)/platforms/boot/cc32xx/cc32xx.ld
 # DEFINES
 ##############################################
 DEFINES += -Dgcc -D$(MCU)
+DEFINES += -DPLATFORM_$(MCU)
 
 ##############################################
 # Include directories
